@@ -1,0 +1,96 @@
+*{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+html, body{
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.container{
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 8%);
+    height: auto;             
+    max-height: 480px;
+    max-width: 400px;
+    min-width: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+}
+
+.image img{
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 10px 0 0 0 ;
+}
+
+.header h1{
+    font-size: 25px;
+    text-align: center;
+}
+
+.location{
+    color:green;
+    text-align: center;
+    font-weight: 600;
+}
+
+.description{
+    margin: 10px;
+}
+
+.main{
+    width: 90%;
+}
+
+.main a{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: hwb(0 15% 85%);
+    margin: 10px ;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.main a:hover{
+    background-color: green;
+    color: black;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px; 
+    text-align: center; }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration:none;
+}
+
+@media (max-width:375px) {
+    .container{
+        min-width: 310px;
+    }
+
+}
+
+/* for mobile 
+the same style response to any screen size 
+*/
